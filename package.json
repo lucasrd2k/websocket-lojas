@@ -1,0 +1,23 @@
+{
+  "name": "websocket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "start:prod": "pm2 start index.js --name avisos",
+    "stop:prod": "pm2 stop avisos",
+    "restart": "pm2 restart avisos",
+    "logs": "pm2 logs avisos"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.6.1",
+    "socket.io-client": "^4.6.1"
+  }
+}
