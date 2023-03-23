@@ -1,5 +1,10 @@
 const io = require('socket.io-client');
-const socket = io('http://localhost:3010');
+const socket = io('https://143.198.186.69:3010');
+
+socket.on('connect', () => {
+    console.log('Conectado ao servidor');
+});
+
 
 socket.on('novaCompra', (data) => {
     console.log('Nova compra recebida:', data);
